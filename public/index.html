@@ -24,6 +24,9 @@
     </header>
     <section class="mx-auto relative mb-5" style="height: 40em;">
         <div class="absolute inset-0 w-screen flex items-center justify-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-0 slide">
+            <img src="./img/slider3.png" alt="Slider 3" class="w-full max-h-screen bg-cover pt-2">
+        </div>
+        <div class="absolute inset-0 w-screen flex items-center justify-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-full slide">
             <img src="./img/slider1.png" alt="Slider 1" class="w-full max-h-screen bg-cover pt-4">
         </div>
         <div class="absolute inset-0 w-screen flex items-center justify-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-full slide">
@@ -145,15 +148,20 @@
 
     </footer>
     <script>
-        setInterval(function(){
-            let activeSlide = document.querySelector('.slide.translate-x-0');
+        let activeSlide, nextSlide;
+        const interval = setInterval(() => {
+            activeSlide = document.querySelector('.slide.translate-x-0');
             activeSlide.classList.remove('translate-x-0');
             activeSlide.classList.add('-translate-x-full');
             
-            let nextSlide = activeSlide.nextElementSibling;
+            nextSlide = activeSlide.nextElementSibling;
             nextSlide.classList.remove('translate-x-full');
-            // nextSlide.classList.add('translate-x-0');
+            nextSlide.classList.add('translate-x-0');
         }, 2000);
+
+        setTimeout(() => {
+            clearInterval(interval);
+        }, 4000)
     </script>
 </body>
 </html>

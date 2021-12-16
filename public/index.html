@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-white px-8 flex justify-between mx-auto max-h-16 h-16">
+    <header class="bg-white px-8 flex justify-between mx-auto max-h-16 h-16 absolute top-0 z-50 w-full">
         <div class="py-2">
             <img src="./img/icon.png" alt="Icon" class="w-full max-h-10">
         </div>
@@ -22,9 +22,15 @@
             </span>
         </nav>
     </header>
-    <section class="mx-auto border-b-4 border-yellow-500 w-full">
-        <div class="h-96 bg-blue-300 flex text-center items-center justify-center">slider</div>
+    <section class="mx-auto relative mb-5" style="height: 40em;">
+        <div class="absolute inset-0 w-screen flex items-center justify-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-0 slide">
+            <img src="./img/slider1.png" alt="Slider 1" class="w-full max-h-screen bg-cover pt-4">
+        </div>
+        <div class="absolute inset-0 w-screen flex items-center justify-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-full slide">
+            <img src="./img/slider2.png" alt="Slider 2" class="w-full max-h-screen bg-cover">
+        </div>
     </section>
+    <div class="border-b-4 border-yellow-500 w-full"></div>
 
     <section class="container mb-24 mx-auto" id="produk">
         <h1 class="text-4xl py-14 text-center text-gray-700">Pilihan Produk</h1>
@@ -138,5 +144,16 @@
         </div>
 
     </footer>
+    <script>
+        setInterval(function(){
+            let activeSlide = document.querySelector('.slide.translate-x-0');
+            activeSlide.classList.remove('translate-x-0');
+            activeSlide.classList.add('-translate-x-full');
+            
+            let nextSlide = activeSlide.nextElementSibling;
+            nextSlide.classList.remove('translate-x-full');
+            // nextSlide.classList.add('translate-x-0');
+        }, 2000);
+    </script>
 </body>
 </html>

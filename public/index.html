@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-white px-8 flex justify-between mx-auto max-h-16 h-16">
+        <div class="py-2">
+            <img src="./img/icon.png" alt="Icon" class="w-full max-h-10">
+        </div>
+        <nav class="flex text-lg h-full">
+            <a href="#" class="hover:bg-gray-100 hover:text-yellow-600 hover:font-bold px-4 flex items-center border-b-4 border-gray-500 transition ease-in duration-300 text-yellow-600">Beranda</a>
+            <a href="#produk" class="hover:bg-gray-100 hover:text-yellow-600 hover:font-bold px-4 flex items-center transition ease-in duration-300">Produk</a>
+            <a href="#profil" class="hover:bg-gray-100 hover:text-yellow-600 hover:font-bold px-4 flex items-center transition ease-in duration-300">Profil</a>
+            <a href="#kontak" class="hover:bg-gray-100 hover:text-yellow-600 hover:font-bold px-4 flex items-center transition ease-in duration-300">Kontak Kami</a>
+            <span class="flex items-center px-4 cursor-pointer">
+                <svg class="w-6 h-6 transform rotate-90 scale-125  text-gray-900 font-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </span>
+        </nav>
+    </header>
+    <section class="mx-auto border-b-4 border-yellow-500 w-full">
+        <div class="h-96 bg-blue-300 flex text-center items-center justify-center">slider</div>
+    </section>
+
+    <section class="container mb-24 mx-auto" id="produk">
+        <h1 class="text-4xl py-14 text-center text-gray-700">Pilihan Produk</h1>
+        <div class="grid grid-cols-3 gap-x-8 gap-y-8">
+            <div class="bg-gray-100 p-3 border-none rounded-lg shadow-md w-3/6 h-72 lg:mx-auto text-center lg:my-auto pt-14 hover:bg-blue-800 hover:text-white group hover:scale-110 transition duration-500 ease-in-out transform cursor-pointer">
+                <div class="bg-yellow-500 bg-opacity-40 rounded-lg border-none inline-block p-5 group-hover:bg-opacity-100 group-hover:bg-white">
+                    <img src="./img/book.svg" alt="Book" class="w-full ">
+                </div>
+                <p class="text-3xl pt-10">Etikal</p>
+            </div>
+            <div class="bg-gray-100 p-3 border-none rounded-lg shadow-md w-3/6 h-72 lg:mx-auto text-center lg:my-auto pt-14 hover:bg-blue-800 hover:text-white group hover:scale-110 transition duration-500 ease-in-out transform cursor-pointer">
+                <div class="bg-yellow-500 bg-opacity-40 rounded-lg border-none inline-block p-5 group-hover:bg-opacity-100 group-hover:bg-white">
+                    <img src="./img/pill.svg" alt="Pill" class="w-full">
+                </div>
+                <p class="text-3xl pt-10">Generic</p>
+            </div>
+            <div class="bg-gray-100 p-3 border-none rounded-lg shadow-md w-3/6 h-72 lg:mx-auto text-center lg:my-auto pt-14 hover:bg-blue-800 hover:text-white group hover:scale-110 transition duration-500 ease-in-out transform cursor-pointer">
+                <div class="bg-yellow-500 bg-opacity-40 rounded-lg border-none inline-block p-5 group-hover:bg-opacity-100 group-hover:bg-white">
+                    <img src="./img/medice.svg" alt="Medice" class="w-full">
+                </div>
+                <p class="text-3xl pt-10">Lainnya</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-24 mx-auto" id="profil">
+        <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+            <div class="lg:ml-auto">
+                <img src="img/city.png" alt="city" width="100%" class="w-full max-h-64">
+            </div>
+            <div class="w-8/12">
+                <h1 class="text-4xl text-gray-700">Profil Kimia Farma</h1>
+                <p class="text-xl font-light mt-8">Kimia Farma adalah perusahaan industri farmasi pertama di Indonesia yang didirikan oleh Pemerintah Hindia Belanda tahun 1817.....</p>
+                <button class="bg-blue-800 py-3 px-6 mt-8 border-none rounded-xl text-white text-base w-50 hover:bg-blue-600 transition ease-in duration-300">Baca Selengkapnya</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-24 mx-auto">
+        <h1 class="text-4xl text-left text-gray-700">Berita Terbaru</h1>
+        <p class="text-2xl my-4 float-right mx-auto text-gray-700 border-b-2 border-yellow-600 inline-block cursor-pointer">Lihat Selengkapnya</p>
+        <div class="flex clear-right mx-auto mt-20">
+            <div class="flex items-center justify-center">
+                <svg class="h-16 w-auto cursor-pointer hover:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </div>
+            <div class="mx-10 w-full relative hover:scale-110 transition duration-500 ease-in-out transform cursor-pointer">
+                <img src="./img/article-1.png" alt="Article-1" class="w-full border-none rounded-xl overflow-hidden">
+                <p class="absolute bottom-0 rounded-b-xl w-full bg-gray-800 text-white p-2 text-center bg-opacity-80">LARANGAN UNTUK MEMBERIKAN BINGKISAN ATAU GRATIFIKASI</p>
+            </div>
+            <div class="mx-10 w-full relative hover:scale-110 transition duration-500 ease-in-out transform cursor-pointer">
+                <img src="./img/article-2.png" alt="Article-2" class="w-full border-none rounded-xl overflow-hidden">
+                <p class="absolute bottom-0 rounded-b-xl w-full bg-gray-800 text-white p-2 text-center bg-opacity-80">KUNJUNGAN MENTERI KESEHATAN KE KIMIA FARMA</p>
+            </div>
+            <div class="mx-10 w-full relative hover:scale-110 transition duration-500 ease-in-out transform cursor-pointer">
+                <img src="./img/article-3.png" alt="Article-3" class="w-full border-none rounded-xl overflow-hidden">
+                <p class="absolute bottom-0 rounded-b-xl w-full bg-gray-800 text-white p-2 text-center bg-opacity-80">KOMITMEN UNTUK TANGGUNG JAWAB SOSIAL</p>
+            </div>
+            <div class="flex items-center justify-center">
+                <svg class="h-16 w-auto cursor-pointer hover:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t-4 border-yellow-500 w-full">
+        <div class="bg-gradient-to-r from-blue-500 to-blue-900">
+                <div class="grid grid-rows-1 grid-cols-3 h-full w-full pt-14 pb-8">
+                    <div class="col-start-1 col-end-8 mx-auto my-auto">
+                        <img src="./img/logo-bumn.png" alt="BUMN" width="100%" class="w-full pr-14">
+                    </div>
+                    <div class="col-start-9 col-end-12 mx-4">
+                        <h2 class="text-gray-100 text-2xl font-semibold">Quick Link</h2>
+                        <ol class="text-gray-200 pt-5">
+                            <li class="text-lg">
+                                <svg class="w-6 h-6 inline text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                 Profile</li>
+                            <li class="text-lg">
+                                <svg class="w-6 h-6 inline text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                 Produk</li>
+                            <li class="text-lg">
+                                <svg class="w-6 h-6 inline text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                 Bisnis</li>
+                            <li class="text-lg">
+                                <svg class="w-6 h-6 inline text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                 Investor</li>
+                            <li class="text-lg">
+                                <svg class="w-6 h-6 inline text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                 Informasi</li>
+                            <li class="text-lg">
+                                <svg class="w-6 h-6 inline text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                 Hubungi Kami</li>
+                        </ol>
+                    </div>
+                    <div class="col-start-12 col-end-12 mx-4" id="kontak">
+                            <h2 class="text-gray-100 text-2xl font-semibold">Kontak Kami</h2>
+                            <div class="flex justify-start items-start mt-5 pr-10">
+                            <svg class="inline w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <p class="text-gray-200 inline pl-2 w-56 text-lg">PT Kimia Farma Tbk Jl. Veteran No.9, Jakarta Pusat Indonesia</p>
+                            </div>
+                            <div class="flex items-start justify-start pl-8 pt-4">
+                                <img src="./img/contact.png" alt="Contact" class="w-52">
+                            </div>
+                            <div class="flex items-start justify-start pl-8 pt-4 gap-3">
+                                <img src="./img/fb.svg" alt="Facebook" class="">
+                                <img src="./img/ig.svg" alt="Instagram" class="">
+                                <img src="./img/yb.svg" alt="Youtube" class="">
+                                <img src="./img/tw.svg" alt="Twitter" class="">
+                            </div>
+                    </div>
+                </div>
+                <p class="text-center bg-gradient-to-r from-blue-500 to-blue-900 text-gray-100 py-5">© 2021 - hfzfrz - Kimia Farma. All Right Reserved.</p>
+        </div>
+
+    </footer>
+</body>
+</html>
